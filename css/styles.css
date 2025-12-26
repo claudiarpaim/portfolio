@@ -31,3 +31,18 @@
 #experiencia .heading {
   text-align: center;
 }
+
+#experience-timeline::before {
+  display: none;
+}
+
+/* Remove a bolinha (marker) */
+#experience-timeline > div::before {
+  display: none;
+}
+
+/* Ajusta alinhamento após remover a timeline */
+#experience-timeline > div {
+  margin-left: 0 !important;
+  padding-left: 40px !important;
+}
