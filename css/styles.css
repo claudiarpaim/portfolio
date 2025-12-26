@@ -33,6 +33,24 @@
   display: none !important;
 }
 
+/* ===== DESATIVAR TIMELINE (FORÇADO) ===== */
+#experience-timeline {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+#experience-timeline::before {
+  display: none !important;
+}
+
+#experience-timeline > div::before {
+  display: none !important;
+}
+
+#experience-timeline > div {
+  padding-left: 0 !important;
+}
+
 /* Remove bolinha */
 #experience-timeline div[data-date]:before {
   display: none !important;
