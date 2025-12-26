@@ -43,3 +43,23 @@
   padding-left: 40px !important;
   margin-left: 0 !important;
 }
+
+/* Desativar visual de timeline na seção Experiência */
+#experience-timeline {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#experience-timeline::before {
+  display: none; /* remove a linha azul */
+}
+
+#experience-timeline > div::before {
+  display: none; /* remove a bolinha */
+}
+
+#experience-timeline > div {
+  padding-left: 0;
+  background: transparent;
+}
+
