@@ -25,24 +25,21 @@
 }
 
 #experience-timeline {
-  border: 3px solid red;
+  #border: 3px solid red;
 }
 
-#experiencia .heading {
-  text-align: center;
+/* Remove linha vertical */
+#experience-timeline:before {
+  display: none !important;
 }
 
-#experience-timeline::before {
-  display: none;
+/* Remove bolinha */
+#experience-timeline div[data-date]:before {
+  display: none !important;
 }
 
-/* Remove a bolinha (marker) */
-#experience-timeline > div::before {
-  display: none;
-}
-
-/* Ajusta alinhamento após remover a timeline */
-#experience-timeline > div {
-  margin-left: 0 !important;
+/* Corrige recuo deixado pela timeline */
+#experience-timeline div[data-date] {
   padding-left: 40px !important;
+  margin-left: 0 !important;
 }
